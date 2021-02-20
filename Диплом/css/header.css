@@ -1,0 +1,138 @@
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  line-height: 54px;
+  font-weight: 400;
+  color: #1f1f24;
+}
+
+.menu-dek {
+  margin-right: 40px;
+}
+
+.menu-link:hover {
+  color: #fc557c;                   /* Цвет ссылки */ 
+  border-bottom: 1px solid #fc557c;
+}
+
+.number-link {
+  color: #1f1f24;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 54px;
+  margin-right: 37px;
+  margin-left: auto;                  /*ссылка прижмется вправо*/
+}
+
+.number-link:hover{
+  color: #ff4e2e;
+}
+
+.call {
+  width: 207px;
+  height: 45px;
+  color: #f53f4f;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #f53f4f;
+  text-align: center;
+}
+
+
+.call:hover{
+  background-color: #ff4e2e;
+  color: #ffffff;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+	.btn-menu {
+		display: block;
+  	width: 49px;
+    height: 48px;
+    border: 0;
+    background-color: transparent; 
+    background-image: url(../img/menu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .number-link {
+    color: #1f1f24;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 54px; 
+    margin-left: auto;
+  }
+
+  .header-left {
+    display: none;
+  }
+
+  .header-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .call {
+    width: 164px;
+    height: 39px;
+    color: #f53f4f;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #ffffff;
+    border: 1px solid #f53f4f;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 450px) {
+  .text-call {
+    display: none;
+  
+  }
+
+  .call {
+    width: 26px;
+    height: 26px;
+    color: #f53f4f;
+    font-weight: 400;
+    background-color: #ffffff;
+    border: 1px solid #f53f4f;
+    text-align: center;
+    border-radius: 50px 50px;
+    background-position: center;
+    background-image: url(../img/btn-call.png);
+    background-size: 13px;
+    background-repeat: no-repeat;
+  }
+
+  .call:hover{
+    background-color: #ff4e2e;
+    color: #ffffff;
+  }
+  
+  .number-link {
+    font-size: 18px;
+  }
+
+  .btn-menu {
+    display: block;
+    width: 24px;
+    height: 18px;
+    background: url(../img/menu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

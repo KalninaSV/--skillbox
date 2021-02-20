@@ -1,0 +1,136 @@
+:root {
+	--padding-basic: 15px;
+}
+@font-face {
+	font-weight: 400;
+  	font-style: normal;
+  	font-family: "Roboto";
+  	font-display: swap;
+  	src:
+  	  local("Roboto-Regular"),
+  	  url("../fonts/Roboto-Regular.woff2") format("woff2"),
+  	  url("../fonts/Roboto-Regular.woff") format("woff");
+}
+  
+  
+@font-face {
+  	font-weight: 500;
+  	font-style: normal;
+  	font-family: "Roboto";
+  	font-display: swap;
+  	src:
+  	  local("Roboto-Medium"),
+  	  url("../fonts/Roboto-Medium.woff2") format("woff2"),
+  	  url("../fonts/Roboto-Medium.woff") format("woff");
+}
+
+@font-face {
+	font-weight: 700;
+	font-style: normal;
+	font-family: "Roboto";
+	font-display: swap;
+	src:
+		local("Roboto-Bold"),
+		url("../fonts/Roboto-Bold.woff2") format("woff2"),
+		url("../fonts/Roboto-Bold.woff") format("woff");
+}
+
+@font-face {
+	font-weight: 900;
+	font-style: normal;
+	font-family: "Roboto";
+	font-display: swap;
+	src:
+		local("Roboto-Black"),
+		url("../fonts/Roboto-Black.woff2") format("woff2"),
+		url("../fonts/Roboto-Black.woff") format("woff");
+}
+
+
+html{
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+body {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	color: #8993ad;
+  	background: #fff;
+  	font-weight: 400;
+  	min-width: 320px;
+  	min-height: 100%;
+ 	position: relative;
+  	overflow-x: hidden;
+  	opacity: 1;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  	-webkit-text-size-adjust: none
+}
+
+input, button {
+	font: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+	transition: .25s ease;
+}
+
+a:-moz-any-link:focus,
+a:-moz-focusring,
+a::-moz-focus-inner,
+a::-moz-focus-outer {
+  	outline: 0;
+  	outline: none
+}
+a:active {
+  	outline: none
+}
+
+img {
+  	width: 100%;
+ 	height: auto;
+ 	max-width: 100%;
+}
+
+.fixed-container {
+	max-width: calc(1170px + var(--padding-basic) *2);
+	margin: 0 auto;
+	padding-right: var(--padding-basic);
+	padding-left: var(--padding-basic);
+}
+
+@media screen and (min-width: 1024px) {
+	.hidden {
+		display: none;
+  	}
+}
+
+@media screen and (min-width: 320px) {
+	.hidden-call {
+		display: none;
+	}
+}
